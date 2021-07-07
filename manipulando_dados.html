@@ -20,13 +20,15 @@
     <h1>Olá Mundo!</h1>
     <p>Primeiro teste aprendendo a salvar dados digitados pelo usuário.</p>
     <script>
-        var nome = window.prompt('Qual o seu nome?'); // salva o input na variável nome
+        var nome = window.prompt('Qual o seu nome?') // salva o input na variável nome
+        document.write(`Olá ${nome}. Seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br/>`)
         alert('É um grande prazer ' + nome + '!')
         var n1 = Number.parseInt(window.prompt('Digite um número: '))
         var n2 = Number.parseInt(window.prompt('Digite outro número: '))
         var s = n1 + n2 
         alert('A soma dos valores é ' + s + '.')
-        // sintaxe nova -> alert('A soma dos valores é ${s}.')
+        // sintaxe nova -> alert(`A soma dos valores é ${s}.`)
         // (number + number) para adição
         // (number + string) para concatenação
     </script>
