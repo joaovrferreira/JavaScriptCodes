@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+    <style>
+        body {
+            background-color: royalblue;
+            color: black;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color:tomato
+        }
+    </style>
+ </head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Primeiro teste aprendendo a salvar dados digitados pelo usuário.</p>
+    <script>
+        var nome = window.prompt('Qual o seu nome?'); // salva o input na variável nome
+        alert('É um grande prazer ' + nome + '!')
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1 + n2 
+        alert('A soma dos valores é ' + s + '.')
+        // sintaxe nova -> alert('A soma dos valores é ${s}.')
+        // (number + number) para adição
+        // (number + string) para concatenação
+    </script>
+</body>
+</html>
