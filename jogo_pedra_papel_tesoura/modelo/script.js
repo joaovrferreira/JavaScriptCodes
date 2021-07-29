@@ -1,63 +1,63 @@
 // User choice
-var userChoice = prompt("Do you choose rock, paper or scissors?");
+var jogadorEscolha = prompt("Você escolherá pedra, papel ou tesoura?");
 
-if (! userChoice) {
+if (! jogadorEscolha) {
     // User choice was undefined
     document.write("<p>Player 1, you cheated! Refresh this screen and fight like a man.</p>");
 } else {
     // Display user choice
-    document.write("<p>Player 1:" + " " + userChoice + "</p>");
+    document.write("<p>Jogador:" + " " + jogadorEscolha + "</p>");
 }
 
 // Computer choice
-var computerChoice = Math.random();
-if (computerChoice < 0.34) {
-    computerChoice = "rock";
-} else if(computerChoice <= 0.67) {
-    computerChoice = "paper";
+var computadorEscolha = Math.random();
+if (computadorEscolha < 0.34) {
+    computadorEscolha = "pedra";
+} else if(computadorEscolha <= 0.67) {
+    computadorEscolha = "papel";
 } else {
-    computerChoice = "scissors";
+    computadorEscolha = "tesoura";
 }
 
 // Display computer choice
-document.write("<p>Computer:" + " " + computerChoice + "</p>");
+document.write("<p>Computador:" + " " + computadorEscolha + "</p>");
 
 // Compare user choice vs computer choice
-var compare = function(choice1,choice2) {
-    if (choice1 === choice2) {
-        return "It's a tie!";
+var comparar = function(escolha1,escolha2) {
+    if (escolha1 === escolha2) {
+        return "Empate!";
     }
-    if (choice1 === "rock") {
-        if (choice2 === "scissors") {
+    if (escolha1 === "pedra") {
+        if (escolha2 === "tesoura") {
             // rock wins
-            return "You win!";
+            return "Você ganhou!";
         } else {
             // paper wins
-            return "You lose! Try again.";
+            return "Você perdeu! Tente novamente.";
         }
     }
-    if (choice1 === "paper") {
-        if (choice2 === "rock") {
+    if (escolha1 === "papel") {
+        if (escolha2 === "pedra") {
             // paper wins
-            return "You win!";
+            return "Você ganhou!";
         } else {
             // scissors wins
-            return "You lose! Try again.";
+            return "Você perdeu! Tente novamente.";
         }
     }
-    if (choice1 === "scissors") {
-        if (choice2 === "rock") {
+    if (escolha1 === "tesoura") {
+        if (escolha2 === "pedra") {
             // rock wins
-            return "You lose! Try again.";
+            return "Você perdeu! Tente novamente.";
         } else {
             // scissors wins
-            return "You win!";
+            return "Você ganhou!";
         }
     }
 };
 
 // Run the compare function
-var results = compare(userChoice,computerChoice);
+var res = comparar(jogadorEscolha,computadorEscolha);
 
 // Display results
-document.write("<br><hr><br>" + results);
+document.write("<br><hr><br>" + res);
