@@ -1,0 +1,25 @@
+{
+  "name": "JavaScriptCodes",
+  "version": "1.0.0",
+  "description": "- Meus primeiros scripts na linguagem de programação JavaScript.\r - Estudos iniciados com o auxílio do Curso em Vídeo, Gustavo Guanabara.\r - O JavaScript é uma poderosa ferramenta!",
+  "main": "condição_aninhada.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaovrferreira/JavaScriptCodes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaovrferreira/JavaScriptCodes/issues"
+  },
+  "homepage": "https://github.com/joaovrferreira/JavaScriptCodes#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-server": "^13.0.1"
+  }
+}
