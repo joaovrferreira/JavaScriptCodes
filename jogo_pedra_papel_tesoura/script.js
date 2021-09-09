@@ -3,7 +3,7 @@ var jogadorEscolha = prompt("Você escolherá pedra, papel ou tesoura?");
 
 if (! jogadorEscolha) {
     // User choice was undefined
-    document.write("<p>Player 1, you cheated! Refresh this screen and fight like a man.</p>");
+    document.write("<p>Você trapaceou! Atualize a página e lute como um guerreiro(a).</p>");
 } else {
     // Display user choice
     document.write("<p>Jogador:" + " " + jogadorEscolha + "</p>");
