@@ -13,4 +13,3 @@ app.get('/joao', function (req, res) {
 app.listen(port, function(){
     console.log('funcionando');
 })
-
