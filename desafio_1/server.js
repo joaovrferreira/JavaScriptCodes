@@ -42,11 +42,11 @@ app.put('/clients/:id', (req, res) => {
 
 app.delete('/clients/:id', (req, res) => {
     const { id } = req.params;
-    const clientsFiltered = date.filter(client => client.id != id);
+    const clientsFiltered = data.filter(client => client.id != id);
 
     res.json(clientsFiltered);
 })
 
 app.listen(3000, function (){
     console.log('server is running')
-})
+}) 
